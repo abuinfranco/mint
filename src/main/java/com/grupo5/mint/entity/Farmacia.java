@@ -34,7 +34,7 @@ public class Farmacia {
 	@Basic(optional = false)
 	@Column(name = "matricula")
 	private String matricula;
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idFarmacia")
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "id_farmacia")
 	private Collection<Receta> recetaCollection;
 	
 	public Long getId() {

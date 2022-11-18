@@ -32,7 +32,7 @@ public class Paciente {
 	@Basic(optional = false)
 	@Column(name = "apellido_paciente")
 	private String apellido_paciente;
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idPaciente")
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "id_paciente")
 	private Collection<Receta> recetaCollection;
 	
 	public Long getId() {

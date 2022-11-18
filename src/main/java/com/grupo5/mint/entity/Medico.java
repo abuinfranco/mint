@@ -35,7 +35,7 @@ public class Medico {
 	@Basic(optional = false)
 	@Column(name = "apellido_medico")
 	private String apellido_medico;
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "idMedico")
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "id_medico")
 	private Collection<Receta> recetaCollection;
 	
 	public Long getId() {
